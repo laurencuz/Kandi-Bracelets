@@ -1,0 +1,109 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+	@mixin horizontalcenter(){
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+@mixin verticalcenter(){
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+@mixin centercenter(){
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+
+body{
+	 top: 0;
+  left: 0;
+	margin: 0;
+	padding: 0;
+	 width: 100vw;
+  height: 100vh;
+	overflow: hidden;
+	-webkit-animation: bgcolor 10s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+h1{
+  text-decoration: none;
+  font-size: 15px;
+  padding-top: 380px;
+  margin-left: 20px;
+}
+p{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: green;
+
+}
+h2{
+	align-content: center;
+	text-align: center;
+}
+h3{
+    align-content: center;
+    text-align: center;
+}
+h4{
+    align-content: center;
+    text-align: center;
+}
+a{
+text-decoration: none;
+font-size: 25px;
+color: purple;
+font-family: "Didot";
+}
+a:hover{
+	color: white;
+}
+.canvas {
+	height: 100vh;
+	width: 100wh;
+	border: 4px dotted pink;
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+@media screen and (min-width: 900px) {
+    .canvas {
+        border-width: 10px;
+    }
+
+
+
+
+
